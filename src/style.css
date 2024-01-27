@@ -1,12 +1,9 @@
 body {
     background: black;
     color: #ED3126;
+    text-decoration: none;
 }
 
 footer {
     color: #FDD102;
-}
-
-a {
-    text-decoration: none;
 }
