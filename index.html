@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>KI Deutscher Gedichtengenerator</title>
 </head>
@@ -12,7 +13,7 @@
         <h1>KI Deutschen Gedichtengenerator</h1>
     </header>
     <main>
-        <form>
+        <form id="gedichtengenerator-form">
             <input 
             type="text" 
             placeholder="Geben Sie das Thema des deutschen Gedichts ein"
@@ -23,11 +24,7 @@
             />
             <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-            Man wird niemals eine Sprache verstehen können
-            <br />
-            ohne eine zweite zu kennen --Geoffrey Willans
-        </div>
+        <div class="poem" id="gedicht"></div>
     </main>
     <footer>This was coded by <a href="https://github.com/inksp0ts09">Maryanne McGlone</a> and is <a href="https://github.com/inksp0ts09/deutscher-gedichtgenerator" target="_blank">open sourced on GitHub</a> and is hosted on <a href="https://deutscher-gedichtengenerator.netlify.app/">Netlify</a></footer>
 </div>
