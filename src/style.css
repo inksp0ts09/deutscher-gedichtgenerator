@@ -6,3 +6,7 @@ body {
 footer {
     color: #FDD102;
 }
+
+a {
+    text-decoration: none;
+}
