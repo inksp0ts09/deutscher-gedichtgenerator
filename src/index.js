@@ -1,5 +1,5 @@
-function anzeigeGedicht(response) {
-    new Typewriter('#gedicht', {
+function showPoem(response) {
+    new Typewriter("#poem", {
         strings: response.data.answer,
         autoStart: true,
         delay: 1,
@@ -8,7 +8,7 @@ function anzeigeGedicht(response) {
 }
 
 
-function generateGedicht(event) {
+function generatePoem(event) {
     event.preventDefault();
 
     let instructionsInput = document.querySelector("#user-instructions");
@@ -22,11 +22,11 @@ function generateGedicht(event) {
     console.log(`Context: ${context}`);
 
 
-    axios.get(apiURL).then(anzeigeGedicht);
+    axios.get(apiURL).then(showPoem);
 }
 
-let poemFormElement = document.querySelector("#gedichtengenerator-form");
-poemFormElement.addEventListener("submit", generateGedicht);
+let poemFormElement = document.querySelector("#poem-generator-form");
+poemFormElement.addEventListener("submit", generatePoem);
 
 
 
